@@ -1,0 +1,109 @@
+.transactions-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.transactions .transaction-form {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #e3e9e3;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.transactions .transaction-form h2 {
+  margin: 0 0 16px;
+  color: #1b2b22;
+}
+
+.transactions .form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.transactions .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #33463a;
+}
+
+.transactions .form-field input,
+.transactions .form-field select {
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #d5ded6;
+  border-radius: 6px;
+  background-color: white;
+  font: inherit;
+}
+
+.transactions .form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.transactions .activity-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf0ec;
+}
+
+.transactions .activity-row:last-child {
+  border-bottom: 0;
+}
+
+.transactions .activity-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.transactions .activity-meta {
+  color: #77827a;
+  font-size: 14px;
+}
+
+.transactions .activity-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transactions .amount {
+  white-space: nowrap;
+}
+
+.transactions .income {
+  color: #28714d;
+}
+
+.transactions .expense {
+  color: #b45345;
+}
+
+@media (max-width: 600px) {
+  .transactions .form-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .transactions .transaction-form {
+    padding: 16px;
+  }
+
+  .transactions .activity-row {
+    align-items: flex-start;
+  }
+
+  .transactions .activity-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+  }
+}
